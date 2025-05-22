@@ -1,0 +1,19 @@
+body{
+    background-color: azure;
+    text-align: center;
+}
+h1{
+ color: red;
+ background-color: black;
+ border-radius: 50px 80px;
+ font-size: 50px;
+ text-decoration: underline;
+}
+h2{
+    color: rgba(177, 177, 16, 0.658);
+}
+footer{
+    
+    border: solid blue;
+    border-radius: 5px;
+}

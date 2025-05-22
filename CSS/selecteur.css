@@ -1,0 +1,55 @@
+/* selecteurs css : */
+
+/* selecteurs généraux (body, p section) = nom des balises */
+
+body {
+  background-color: white;
+}
+p {
+  background-color: magenta;
+}
+
+/* selecteurs un peu plus cibles : ici on prend le premier p (premier enfant) direct de section */
+
+section > p:first-child {
+  background-color: blue;
+}
+
+/* nth-child = on indiaue le numéro de l'element à cibler (2 = 2eme element) */
+
+section > p:nth-child(2) {
+  background-color: aliceblue;
+}
+section > p:last-child {
+  background-color: darkgreen;
+}
+
+/* on cible tous les éléments impaire= (section>p:nth-child(odd) et pour les paires= (section>p:nth-child(even) */
+
+/* c'est toujours le dernier enunciato que l'ordinateur prend en consideration */
+
+section > p > span {
+  /*ou section > p:first-child > span */
+  color: green;
+}
+
+/* la virgule sert a mettre plusieurs elements qui vont recevoir le même CSS */
+h1,
+p {
+  color: violet;
+}
+
+/* le mieux ciblé as la priorité */
+
+/* ID , CLASS */
+/* # = id */
+/* . = class */
+
+#section {
+  background-color: purple;
+  height: 200px;
+  border-radius: 25px;
+}
+.rouge {
+  color: red; /* la class n'a pas la priorité, elle revient toujours à nth-child (odd) */
+}
