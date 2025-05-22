@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--  balise form qui contiendra tout les éléments de notre formulaire -->
     <form action="">
+      <label for="nom">Nom*</label>
+      <!-- les inputs contiendront les champs du formulaire, il en existe plusieurs types -->
+      <input type="text" id="nom" placeholder="scivi qui" required>
 
+      <label for="email">Email</label>
+      <input type="email" id="email">
 
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password">
+
+      <label for="checkbox">Quelles destination choisissez vous?</label>
+      <input type="checkbox" checked><label for="Italie"></label> Italie </label>
+      <input type="checkbox"> France
+      <input type="checkbox"> Allemagne
+
+      <label for="fruits">Quel est ton fruit préféré</label>
+      <input type="radio" name="fruit" value="Cerise" id="cerise">
+      <label for="cerise">Cerise</label>
+
+      <input type="radio" name="fruit" value="Nectarine" id="nectarine">
+      <label for="nectarine">Nectarine</label>
+
+      <label for="textarea">Commentaire</label>
+      <textarea id="textarea" maxlength="200" minlength="40" rows="7" cols="25" style="resize: none;"></textarea>
+
+      <label for="age">Quel est votre âge très cher?</label>
+      <input type="number" min="0">
+
+      <input type="submit" value="Envoyer le formulaire">
+
+      <input type="reset" value="Annuler">
     </form>
-</body>
+  </body>
 </html>
