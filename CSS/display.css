@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+
+}
+
+/* Notre span de type inline est changée en type block, elle va donc faire toute la largeur de la page. */
+#block{
+    display: block;
+}
+
+/* Nos div de type block vont être changés en type inline */
+
+/* Le width ne fontionnera pas ici */
+
+.inline-div {
+    display: inline;
+}
+
+/* Nos div de type block vont être changées en type inline-block, mais elles vont garder leur capacité à changert de taille et largeur */
+
+/* Ici le width ça marche */
+
+.inline-block-div {
+    display: inline-block;
+    width: 30%;
+}
+
+/* Flex */
+
+#flex{
+    display: flex; /* propriété flex */
+    flex-direction: row-reverse; /* La propriété flex-direction permet de definir comment seront placés nos éléments :
+    
+    row = en ligne par defaut ;
+    column = en colonne ;
+    row-reverse = en ligne mais à l'envers et en fin de ligne ;
+    column-reverse = en colonne mai à l'envers */
+    justify-content: start; /* ou left */ 
+}

@@ -1,0 +1,35 @@
+body {
+   margin: 0; /* Espacements exterieurs à 0 */
+   padding: 0; /* Espacements interieurs à 0 */
+   background: #3c9bc7;
+background: linear-gradient(90deg, rgba(60, 155, 199, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+/* Contaneur principal */
+
+.container {
+    width: 100%; /* Largeur de l'element à 100% de ma page */
+    /* margin: 20px;  Une marge exterieure de TOUS les côtés (haut, droite, bas, gauche) de 20px */
+    overflow: hidden; /* Cache ce qui dépasse de l'élement */
+}
+
+/* Colonne principale */
+
+.main {
+    width: 70%; /* Largeur de la div .main de 70%  par apport .container qu'il est son parent*/
+    float: left; /* Permet de faitr 'flotter' l'élement à gauche de la page */
+    background-color: aqua;
+    border: 1px solid magenta; 
+}
+
+/* Barre laterale flottante */
+.sidebar{
+    width: 30%; /* On rajoute les 30% manquants */
+    float: right;
+    background-color: deeppink;
+}
+
+/* Clear pour remettre tous les éléments 'normaux', les suivants reviendront en dessous. */
+.clear {
+  clear: both;
+}
