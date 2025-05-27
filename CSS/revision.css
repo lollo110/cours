@@ -1,0 +1,74 @@
+/* * = tous les éléments de la page */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 3 solutions pour trouver 1 h2 specific:
+main > section > div > h2 {}
+main > section > div:last-child > h2{}
+on utilise un id: #id{}
+ */
+
+/* Les NTH: Niéme 
+ main > section > div:nth-child(numero de position) {} */
+
+/* 2 solutions si on a un CSS identique pour plusieurs éléments: 
+ 1. main > section > div:first-child > h2, main > section > div:first-child > p {}
+ 2. On utilise une classe: .classe {}
+  */
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around; /* Justify-content aligne les éléments flex horizontalment SEULEMENT si flex-direction est en row */
+  flex-direction: row; /* Disposotion en ligne (par défaut aund on met display: flex) si on veut changer on a le 'mode' column */
+  height: 100px;
+  align-items: center; /* Comme justify-content mais verticalement SAUF si flex-direction est en column, dans ce cas il agira horizontalement */
+}
+
+/* OU :
+  nav ul li{
+    list-style-type: none;
+  } */
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+
+/* hover : pseudo-class qui permet de changer le CSS lors d'un survol à la souris */
+
+.liens:hover {
+  color: blueviolet;
+}
+
+li:hover {
+  transform: scale(2);
+}
+
+/* Background image */
+#img-luffy {
+  background-image: url(../img/lufff.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  border-radius: 40% 10% 30% 25%;
+}
+
+/* Margin et padding : plusieurs façon de faire :
+
+pour le 4 même (haut, droite, bas, gauche) -> margin : 10px;
+pour en haut/en bas et gauche/droite -> margin : 10px 20px;
+pour cibler chacun -> margin : 10px 30px 40px 20px;
+pour les margin/padding à 0 -> margin : 0;
+*/
+
+span{
+  color: blueviolet;
+  font-weight: bold;
+}
