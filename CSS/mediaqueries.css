@@ -1,0 +1,27 @@
+.zone {
+  background-color: chocolate;
+  color: white;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .zone {
+    background-color: orange;
+  }
+}
+
+@media (min-width: 992px) {
+  .zone {
+    background-color: blueviolet;
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .zone {
+    background-color: green;
+    font-size: 1rem;
+    text-align: right;
+  }
+}
