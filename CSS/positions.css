@@ -1,0 +1,34 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 10px;
+
+    /* Premiere */
+    /* Position par defaut de chaque élément, il n'est pas impacté par le changement de position (top,right,left,bottom) */
+    /* position: static;  */
+
+    /* Second */
+    /* Relative */
+    /* Si on ne spécifie pas de position (top,right,left,bottom), elle resterq à sa place, mais si on spécifie, elle bougera par apport à sa position initiale*/
+    /* position: relative; */
+    /* bottom: 50px; elle bougera de 50px vers haut */
+
+    /* Troisieme */
+    /* Absolute : va se placer par apport à son parent, l'importante c'est que son parent soit en position (relative, absolute, fixed, sticky), sinon il se placera par apport au body, si aucun des autres ancetre n'a de position. */
+
+    /* Quatriéme */
+    /* Fixed : L'élément sera fixé par rapport a la fenêtre du navigateur */
+
+    /* 5eme */
+    /* Sticky : Hybride entre relative et fixed, l'élément il rest dans le flux jusqu'à atteindre une distance définie, puis il se fixe à cet endroit tant que son conteneur est visible. */
+}
+
+h1{
+    position: sticky;
+    top: 50px;
+}
+
+body{
+    height: 5000px;
+}
